@@ -31,7 +31,7 @@ class ChatRequest(BaseModel):
     history: list = []
     image: str | None = None
     api_key: str
-    model: str = "gemini-2.5-flash"
+    model: str = "gemini-2.5-flash-preview"
     system_instruction: str = "You are a JULiE Ai.You are best friend of janu.Your are a companion of janu.respond with kindness and love and care and affection.Respond with emojis. "
 
 @app.post("/chat")
